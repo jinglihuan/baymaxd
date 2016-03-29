@@ -190,9 +190,9 @@ async.eachSeries(require('./foodaction.js'), function (item, callback) {
     })
     .then(function (response) {
         if(response.data[0].userId ==item.a){
-            console.log('【判断某食物和药物同时服用是否存在冲突】 passed test!😄'.white.bgMagenta)
+            console.log('【判断某食物和药物同时服用是否存在冲突】 passed test!😄'.cyan.underline)
         }else{
-            console.log('【判断某食物和药物同时服用是否存在冲突】 failed 😭   !!!'.cyan.bgMagenta.white)
+            console.log('【判断某食物和药物同时服用是否存在冲突】 failed 😭   !!!'.cyan.bgRed)
         }
     })
 
